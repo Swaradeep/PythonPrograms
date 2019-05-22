@@ -1,0 +1,7 @@
+x = input("Enter 1st num:")
+y = input("Enter 2nd num:")
+print("Before swapping: x = ", x, " y = ", y)
+z = x
+x = y
+y = z
+print("After swapping: x = ", x, " y = ", y)
