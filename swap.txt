@@ -5,3 +5,12 @@ z = x
 x = y
 y = z
 print("After swapping: x = ", x, " y = ", y)
+
+
+#Or
+
+'''
+x = input("Enter 1st num:")
+y = input("Enter 2nd num:")
+print("Before swapping: x = ", x, " y = ", y)
+print("After swapping: x = ", y, " y = ", x)
