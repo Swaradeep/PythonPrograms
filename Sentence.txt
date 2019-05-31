@@ -1,12 +1,11 @@
-j = 0
 sentence = input("Enter sentence:")
-count= 0
 sentence1 = sentence.split()
 i = 0
 while i < len(sentence1):
     a = sentence1[i]
     i = i+1
-    count = 1
+    count = 0
+    j = 0
     while j < len(sentence1):
         if(a == sentence1[j]):
             count +=1
