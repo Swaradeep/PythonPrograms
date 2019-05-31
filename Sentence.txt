@@ -10,6 +10,6 @@ while i < len(sentence1):
         if(a == sentence1[j]):
             count +=1
         j = j+1
-    print(a,"  ", count)
+    print("Word: ",a,"  ","Count: ", count)
 sentence1 = set(sentence1)
 print(sentence1)
