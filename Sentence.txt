@@ -1,15 +1,16 @@
 sentence = input("Enter sentence:")
-sentence1 = sentence.split()
+sentence2 = sentence.split()
+sentence1 = set(sentence2)
+sentence1 = list(sentence1)
 i = 0
 while i < len(sentence1):
     a = sentence1[i]
     i = i+1
     count = 0
     j = 0
-    while j < len(sentence1):
-        if(a == sentence1[j]):
+    while j < len(sentence2):
+        if(a == sentence2[j]):
             count +=1
         j = j+1
     print("Word: ",a,"  ","Count: ", count)
-sentence1 = set(sentence1)
 print(sentence1)
