@@ -1,0 +1,125 @@
+'''
+n = int(input("Enter a number:"))
+i = 1
+while i <= n:
+  print(i)
+  i += 1
+'''
+
+
+'''
+m = int(input("Enter m:"))
+n = int(input("Enter n:"))
+while m <= n:
+  print(m)
+  m += 1
+'''
+
+
+'''
+n = int(input("Enter n:"))
+i = 1
+sum = 0
+while i <= n:
+  sum = sum+i
+  i += 1
+print("Sum = ",sum)
+'''
+
+'''
+n = int(input("Enter n:"))
+while n != 0:
+  rem = n % 10
+  print(rem)
+  n = n // 10
+'''
+
+'''
+n = int(input("Enter n:"))
+temp = n
+rev = 0
+while temp != 0:
+  rem = temp % 10
+  rev = rev*10 + rem
+  temp = temp // 10
+if n == rev:
+  print("Palindrome")
+else:
+  print("Not palindrome")
+'''
+
+
+'''
+n = int(input("Enter a number:"))
+temp = n
+res = 0
+pow = 0
+while temp != 0:
+  rem = temp % 10
+  pow += 1
+  temp = temp // 10
+temp  = n
+while temp != 0:
+  rem = temp % 10
+  res += rem**pow 
+  temp = temp // 10
+if n == res:
+  print("Armstrong")
+else:
+  print("Not armstrong")
+'''
+
+
+'''
+n = int(input("Enter a number:"))
+fact = 0
+i = 1
+while i <= n:
+  if n%i == 0:
+    fact += 1
+  i += 1
+if fact <= 2:
+  print("Prime")
+else:
+  print("Not prime")
+'''
+
+
+'''
+for i in range(2, 101, 2):
+  print(i)
+'''
+
+
+'''
+for i in range(100, 9, -2):
+  print(i)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
