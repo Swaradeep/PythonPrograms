@@ -1,0 +1,27 @@
+import java.text.DecimalFormat;
+import java.util.*;
+public class ClockAngle {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int period = s.nextInt();
+        float lt = s.nextFloat();
+        double d = 1.234567;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String st = df.format(lt);
+        lt = Float.parseFloat(st);
+        float time = (period/360.00f)*lt;
+        st = df.format(time);
+        time = Float.parseFloat(st);
+        double mins = time%1;
+        int min = (int) (mins*60);
+        int hours = (int)time%12;
+        float hdegree = (hours*30)+(min/2);
+        float mdegree = min*6;
+        double deg = (int)Math.pow(hdegree-mdegree, 2);
+        deg = Math.sqrt(deg);
+        if(deg > 180){
+            deg = 360-deg;
+        }
+        System.out.printf("%.2f", deg);   
+    }
+}
